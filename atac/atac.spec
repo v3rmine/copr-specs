@@ -10,6 +10,7 @@ License:        MIT
 URL:            https://github.com/Julien-cpsn/ATAC
 Source0:        %{url}/archive/v%{version}.tar.gz
 
+BuildRequires: gcc-c++
 %if 0%{?el8} || 0%{?el9}
 %else
 BuildRequires: cargo
@@ -27,7 +28,7 @@ curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal -y
 
 %install
 export RUSTFLAGS="%{rust_flags}"
-%if 0%{?el8}
+%if 0%{?el8} || 0%{?el9}
 $HOME/.cargo/bin/cargo install --locked --root=%{buildroot}%{_prefix} --path=.
 %else
 cargo install --locked --root=%{buildroot}%{_prefix} --path=.
