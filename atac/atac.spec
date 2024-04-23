@@ -2,7 +2,7 @@
 %global rust_flags -Ccodegen-units=1 -Cstrip=debuginfo
 
 Name:           atac
-Version:        0.13.0
+Version:        0.14.0
 Release:        1%{?dist}
 Summary:        Arguably a Terminal API Client
 
