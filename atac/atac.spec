@@ -26,6 +26,8 @@ ATAC is Arguably a Terminal API Client. It is based on well-known clients such a
 curl https://sh.rustup.rs -sSf | sh -s -- --profile minimal -y
 %endif
 
+%build
+
 %install
 export RUSTFLAGS="%{rust_flags}"
 %if 0%{?el8} || 0%{?el9}
@@ -44,8 +46,8 @@ strip --strip-all %{buildroot}%{_bindir}/*
 %{_bindir}/atac
 
 %changelog
-* Apr 18 2024 julien-cpsn <julien.caposiena@gmail.com> - v0.13.0
-- Update to 0.13.0
-
-* Apr 23 2024 julien-cpsn <julien.caposiena@gmail.com> - v0.14.0
+* Tue Apr 23 2024 julien-cpsn <julien.caposiena@gmail.com> - v0.14.0
 - Update to 0.14.0
+
+* Thu Apr 18 2024 julien-cpsn <julien.caposiena@gmail.com> - v0.13.0
+- Update to 0.13.0
