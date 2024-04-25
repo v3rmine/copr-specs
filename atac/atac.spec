@@ -4,7 +4,7 @@
 Name:           atac
 Version:        0.14.0
 Release:        1%{?dist}
-Summary:        Arguably a Terminal API Client
+Summary:        A simple API client (postman like) in your terminal
 
 License:        MIT
 URL:            https://github.com/Julien-cpsn/ATAC
@@ -18,7 +18,7 @@ BuildRequires: rust
 %endif
 
 %description
-Arguably a Terminal API Client. Feature-full, free, open-source, offline and account-less.
+ATAC is Arguably a Terminal API Client. It is based on well-known clients such as Postman, Insomnia, or even Bruno, but inside your terminal without any specific graphical environment needed.
 
 %prep
 %autosetup -n ATAC-%{version}
