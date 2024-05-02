@@ -46,6 +46,9 @@ strip --strip-all %{buildroot}%{_bindir}/*
 %{_bindir}/atac
 
 %changelog
+* Wed May 1 2024 julien-cpsn <julien.caposiena@gmail.com> - v0.15.0
+- Update to 0.14.0
+
 * Tue Apr 23 2024 julien-cpsn <julien.caposiena@gmail.com> - v0.14.0
 - Update to 0.14.0
 
