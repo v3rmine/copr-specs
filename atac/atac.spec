@@ -2,7 +2,7 @@
 %global rust_flags -Ccodegen-units=1 -Cstrip=debuginfo
 
 Name:           atac
-Version:        0.20.0
+Version:        0.20.1
 Release:        1%{?dist}
 Summary:        A simple API client (postman like) in your terminal
 
@@ -46,6 +46,9 @@ strip --strip-all %{buildroot}%{_bindir}/*
 %{_bindir}/atac
 
 %changelog
+* Sun May 25 2025 julien-cpsn <julien.caposiena@gmail.com> - v0.20.1
+- Update to 0.20.1
+
 * Thu May 15 2025 julien-cpsn <julien.caposiena@gmail.com> - v0.20.0
 - Update to 0.20.0
 
